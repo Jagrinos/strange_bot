@@ -1,0 +1,43 @@
+// диалог.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
+//
+
+#include <iostream>
+#include <stdio.h>
+
+#include <Windows.h>
+
+int main()
+{
+    system("color 02");
+    setlocale(LC_ALL, "Russian");
+    int krutka = 0;
+    char vvod[100];
+    while (true)
+    {
+        krutka += 1;
+        Sleep(2000);
+
+        printf("Привет\n");
+
+        Sleep(1000);
+
+        printf("Ты тут?\n");
+
+        Sleep(1000);
+
+        scanf_s("%s", vvod, 100);
+
+        Sleep(3000);
+
+        if (krutka % 3 == 0)
+            printf("%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s", vvod, vvod, vvod, vvod, vvod, vvod, vvod, vvod, vvod, vvod, vvod, vvod, vvod, vvod, vvod, vvod, vvod, vvod, vvod, vvod, vvod, vvod, vvod, vvod, vvod, vvod, vvod, vvod);
+        else
+            printf("Я тебя совсем не понимаю :-( \n");
+        
+
+    
+    }
+   
+    
+    return 0;
+}
